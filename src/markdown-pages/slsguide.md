@@ -2,11 +2,14 @@
 slug: "/slsguide"
 date: "2020-08-03"
 title: "Sim Lim Square Shopping Guide"
+type: "page"
 ---
 
 Shopping at Sim Lim Square for the first time can be daunting, with the numerous horror stories coming out over the years. However, it is also the haven for PC builders and hardware enthusiasts at the same time.
 
 Below is a compiled list of shops and their contact information. Respective pricelists can be found at the listed websites/Facebook pages. 
+
+<br/>
 
 ## PC Hardware Shops
 
@@ -24,6 +27,8 @@ All PC hardware shops are located within Sim Lim Square, 1 Rochor Canal Road.
 
 If you decide to purchase your PC via Sim Lim Square, try to buy everything that you need from one store for a higher chance of getting a discount and getting all your purchases wrapped up quickly. 
 
+<br/>
+
 ## Peripherals Shops
 | Name                          | Location     | Website/Facebook Page                                          | Contact Number  |
 |-------------------------------|--------------|----------------------------------------------------------------|-----------------|
@@ -31,5 +36,6 @@ If you decide to purchase your PC via Sim Lim Square, try to buy everything that
 |GamePro Shop | #03-15, 107 North Bridge Rd <br> 6 Raffles Boulevard, #02-261/267 | https://gameprosg.com/ | 63386412 (Funan) 63386413 (Marina Square)|
 |Endless Passion | No Physical Store | https://endlesspassion.com.sg/ | 83286692 |
 
+<br/>
 
 ## Specialised Shops (Watercooling, etc.)

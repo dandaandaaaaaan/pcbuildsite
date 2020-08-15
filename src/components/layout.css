@@ -387,7 +387,7 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
 }
 figure {
   margin-left: 0;
@@ -641,4 +641,10 @@ pre tt:after {
 
 li [aria-current="page"] {
   background-color: #919494;
+}
+
+.Collapsible{
+  outline-style: solid;
+  padding: 10px;
+  margin-bottom: 1.75rem;
 }
