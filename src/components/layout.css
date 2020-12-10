@@ -668,6 +668,6 @@ li [aria-current="page"] {
     opacity: 0.5;
     background-color: grey; }
   
-.collapsibleContent {
+.Collapsible__contentInner {
   padding: 10px;
 }
