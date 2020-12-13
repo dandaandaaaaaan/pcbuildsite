@@ -12,7 +12,7 @@ export default function BuildViewer() {
     <StaticQuery
         query={graphql`
         query {
-            allMdx(filter: {frontmatter: {type: {eq: "home"}}}, sort: {fields: frontmatter___title}) {
+            allMdx(filter: {frontmatter: {type: {eq: "home"}}}, sort: {fields: frontmatter___order}) {
               edges {
                 node {
                   id
@@ -32,7 +32,10 @@ export default function BuildViewer() {
         <MDXRenderer>{data.allMdx.edges[0].node.body}</MDXRenderer>
     </Collapsible>
     <Collapsible trigger={data.allMdx.edges[1].node.frontmatter.title}>
-        <MDXRenderer>{data.allMdx.edges[0].node.body}</MDXRenderer>
+        <MDXRenderer>{data.allMdx.edges[1].node.body}</MDXRenderer>
+    </Collapsible>
+    <Collapsible trigger={data.allMdx.edges[2].node.frontmatter.title}>
+        <MDXRenderer>{data.allMdx.edges[2].node.body}</MDXRenderer>
     </Collapsible>
     </MDXProvider>
     </div>
