@@ -8,7 +8,7 @@ public_folder: /assets
 collections:
   - name: 'builds'
     label: 'builds'
-    folder: 'content/builds'
+    folder: 'src/pages/builds'
     create: true
     editor:
       preview: false
