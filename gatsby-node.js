@@ -5,6 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
   const blogPostTemplate = require.resolve(`./src/templates/mdTemplate.js`)
@@ -17,7 +18,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       ) {
         edges {
           node {
-            slug
+            frontmatter{
+              slug
+            }
           }
         }
       }
@@ -28,14 +31,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-  result.data.allMdx.edges.forEach(({ node }) => {
-    createPage({
-      path: node.slug,
-      component: blogPostTemplate,
-      context: {
-        // additional data can be passed via context
-        slug: node.slug,
-      },
-    })
-  })
+  const pages = result.data.allMdx.edges;
+  pages
+    .forEach(({ node }) => {
+      createPage({
+        path: node.frontmatter.slug,
+        component: blogPostTemplate,
+        context: {
+          slug: node.frontmatter.slug,
+        },
+      });
+    });
 }

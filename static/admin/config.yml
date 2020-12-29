@@ -5,15 +5,18 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 
+local_backend: true
+
 collections:
   - name: 'builds'
     label: 'builds'
     folder: 'src/pages/builds'
-    create: true
+    create: false
     editor:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Order', name: 'order', widget: 'string' }
+      - { label: 'Visible', name: 'visible', widget: 'boolean'}
       - { label: 'Body', name: 'body', widget: 'markdown' }

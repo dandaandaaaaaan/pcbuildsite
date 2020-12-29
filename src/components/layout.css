@@ -211,7 +211,9 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 img {
-  max-width: 100%;
+  max-width: 50%;
+  max-height: 300px;
+  display: block;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -510,7 +512,7 @@ dt {
   font-weight: bold;
 }
 th {
-  font-weight: bold;
+  font-weight: normal;
 }
 li {
   float:left;
